@@ -3,12 +3,13 @@ body{
     background-image: url(glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 #div{
     background-color: rgba(0, 0, 0, 0.568);
     border: solid 10px rgba(0, 0, 0, 0.404);
-}
+    
+} 
 #navbar{
     display: flex;
     justify-content: center;
@@ -33,10 +34,37 @@ body{
 #link a:hover{
     transition: all 500ms ease;  
     background-color: rgba(128, 128, 128, 0.459);
+    padding: 7px 12px;
+}
+#link a:active{
+    background-color: black;
 }
 #div1{
     display: flex;
     justify-content: space-between;
+}
+#div2{
+    margin: 20px;
+}
+#div2 img{
+    border-radius: 20px;
+}
+#writeup button{
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0.329);
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#writeup button a{
+ text-decoration: none;
+ color: white;
+ font-size: 15px;
+}
+#writeup button:hover{
+    transition: all 500ms ease;  
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 7px 12px;
 }
 #writeup{
     /* background-color: blanchedalmond; */
@@ -51,8 +79,17 @@ body{
 #writeup p {
     text-shadow: 3px 5px rgba(255, 255, 255, 0.219);
 }
+#writeup1 p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
 #footer{
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     /* background-color: brown; */
@@ -70,4 +107,20 @@ body{
     50% {top: -50px;}
     75% {top: 30px;}
     100% {top: -50px;}
+}
+/* a:active{
+    background-color: black;
+} */
+
+@media screen and (max-width: 580px){
+#link a{
+    font-weight: 200;
+    font-size: 13px;
+}
+#writeup{
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+}
+ 
 }
